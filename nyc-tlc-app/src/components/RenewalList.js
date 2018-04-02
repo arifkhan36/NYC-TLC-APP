@@ -15,6 +15,10 @@ class RenewalList extends Component {
                   
                 </ul> 
 
+                <button onClick={() => this.props.deleteRenewal(this.props.id, this.props.index)}>Delete
+
+                </button>
+
             </div>
          )
     }

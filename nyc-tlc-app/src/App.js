@@ -128,6 +128,20 @@ handleCreateSubmit = (event) => {
   this.createRenewal(this.state.driver);
 }
 
+deleteRenewal = async (driverId, index) => {
+  try {
+    await axios.delete(`/drivers/${driverId}`)
+    const updatedDriverList = [...this.state.driverTable]
+    updatedDriverList.splice(index, 1)
+    this.setState({driverTable: updatedDriverList})
+
+  } catch (error) {
+    console.log(`error in deleteing list ${driverId}`)
+    console.log(error)
+
+  }
+}
+
 
   render () {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
     return (
@@ -160,6 +174,7 @@ handleCreateSubmit = (event) => {
                       {...driver}
                       key={index}
                       index={index}
+                      deleteRenewal={this.deleteRenewal}
                     />
 
                 )

@@ -42,13 +42,13 @@ public class DriversController {
 
        return foundDriver;
     }
-//
-//    @DeleteMapping("/{driverId}")
-//    public HttpStatus deleteriverById(@PathVariable Long driverId) throws EmptyResultDataAccessException {
-//        driverRepository.delete(driverId);
-//        return HttpStatus.OK;
-//    }
-//
+
+    @DeleteMapping("/{driverId}")
+    public HttpStatus deleteDriverById(@PathVariable Long driverId) throws EmptyResultDataAccessException {
+        driverRepository.delete(driverId);
+        return HttpStatus.OK;
+   }
+
     @PostMapping("/")
     public Driver createNewDriver(@RequestBody Driver newDriver) {
        return driverRepository.save(newDriver);
