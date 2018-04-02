@@ -22,10 +22,18 @@
   font-size: large;
 }
 
-.search{
+/* .search{
   margin:auto;
-}
+} */
 
+input{
+  margin:10px 20px 20px 2px;
+  width:225px;
+  height:45px;
+  font-size:15px;
+  text-align:center;
+  
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
