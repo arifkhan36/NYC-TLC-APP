@@ -3,6 +3,8 @@ import DriverList from './components/DriverList';
 import Search from './components/Search';
 import Navbar from './components/Navbar';
 import RenewalList from './components/RenewalList';
+import Authen from './components/Authen';
+// import Login from './components/Login';
 import './App.css';
 import axios from 'axios';
 
@@ -155,6 +157,9 @@ deleteRenewal = async (driverId, index) => {
         
         
         />
+        {/* <Login /> */}
+        <Authen />
+       
        
         <DriverList driver={this.state.driver}/>
         

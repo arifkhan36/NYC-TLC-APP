@@ -8,20 +8,40 @@ class Search extends Component {
     render() {
         return (
         <div className="Box">
-          <form
+
+             <form
+             onSubmit={this.props.submitForm}
+             >
+
+            <div className="ui icon input">
+                <input type="text" 
+                
+                value={this.props.inputValue}
+                placeholder="Search..."
+                onChange={this.props.handleInputValue} 
+
+               />
+               <i aria-hidden="true" class="search icon"></i>
+            </div>
+            </form>
+          {/* <form 
             className="search"
             onSubmit={this.props.submitForm}
           >
-          <input
+           
+          <input id="search"
             type="text"
             value={this.props.inputValue}
+            
             name="content"
             placeholder="Search here"
             onChange={this.props.handleInputValue}
           />
+          
 
-          </form>
+          </form> */}
         </div>
+        
         );
       }
     }
