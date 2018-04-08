@@ -4,7 +4,13 @@ import Search from './components/Search';
 import Navbar from './components/Navbar';
 import RenewalList from './components/RenewalList';
 import Authen from './components/Authen';
+import { Image } from 'semantic-ui-react';
+import assets from './assets/tlc-taxi-image.jpg';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // import Login from './components/Login';
+import {
+  Button, Container, Header
+} from 'semantic-ui-react';
 import './App.css';
 import axios from 'axios';
 
@@ -145,9 +151,32 @@ deleteRenewal = async (driverId, index) => {
 }
 
 
-  render () {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+  render () { 
+    const style = {
+      h1: {
+        margin: '1em 50em',
+      },
+      h2: {
+        margin: '4em 10em 12em',
+
+      },
+      h3: {
+        marginRight: '12em',
+        padding: '2em 10em',
+        color:'red',
+      },
+      last: {
+        marginBottom: '300px',
+      },
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     return (
+     
       <div>
+         <Router>
+          <Switch>
+            <Route exact path="/login" component={Authen}/>
+          </Switch>
+        </Router>
         <section className="list">
         <Navbar />
         <Search 
@@ -157,21 +186,31 @@ deleteRenewal = async (driverId, index) => {
         
         
         />
+         <Image
+         src={assets}
+        //  as='a'
+         size='massive' centered rounded
+         opacity='0.5'
+        />
         {/* <Login /> */}
-        <Authen />
+        {/* <Authen /> */}
        
        
         <DriverList driver={this.state.driver}/>
         
         </section>
-        <div>
-            <button
+    
+        <Header
+                as='h3'
+                style={style.h1}
+                // textAlign='0 auto'
+                />
+            {/* <Container text> */}
+            <Button primary
                 onClick={ this.handleCreateSubmit}>
-                Add to Renewallist 
-            </button>
-        </div>
-
-        <h3>My Renewal Driver List</h3>
+                AddList 
+            </Button>
+            {/* </Container> */}
         {
             this.state.driverTable.map((driver, index) => {
                 return(

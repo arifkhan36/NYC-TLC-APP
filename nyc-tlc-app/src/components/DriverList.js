@@ -29,27 +29,20 @@ class DriverList extends Component {
                 style={style.h3}
                 textAlign='center'
                 />
-              <Container text>
-              <Segment.Group>
-              <Segment>DriverName:{this.props.driver.name}</Segment>
-              <Segment>type:{this.props.driver.type}</Segment>
-              <Segment>LicenseNo:{this.props.driver.license_number}</Segment>
-              <Segment>Exp:{this.props.driver.expiration_date}</Segment>
-              <Segment>last_updated_date:{this.props.driver.last_updated_date}</Segment>
-              <Segment>last_updated_time:{this.props.driver.last_updated_time}</Segment>
+            <div className="listofdriver">
+              {/* <Container text>
+              <Segment.Group> */}
+                <Segment>DriverName:{this.props.driver.name}</Segment>
+                <Segment>type:{this.props.driver.type}</Segment>
+                <Segment>LicenseNo:{this.props.driver.license_number}</Segment>
+               <Segment>Exp:{this.props.driver.expiration_date}</Segment>
+               <Segment>last_updated_date:{this.props.driver.last_updated_date}</Segment>
+               <Segment>last_updated_time:{this.props.driver.last_updated_time}</Segment>
               
 
-             </Segment.Group>
-             <Button onClick={this.handleCreateSubmit} color='red'>AddList
-
-              </Button>
-              {/* <div>
-            <button
-                onClick={ this.handleCreateSubmit}>
-                Add to Renewallist 
-            </button>
-        </div> */}
-           </Container>
+             {/* </Segment.Group>
+           </Container> */}
+           </div>
                
             </div>
          )

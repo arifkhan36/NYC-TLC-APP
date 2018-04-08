@@ -142,7 +142,7 @@ class Authen extends Component {
               id="email" ref="email" type="email" placeholder="Enter your email"
             //   placeholder='E-mail address'
             /> */}
-             <input id="email" icon='user'
+             <input fluid id="email" icon='user'
               iconPosition='left' ref="email" type="email" placeholder="Enter your email" />
             {/* <Form.Input
               fluid

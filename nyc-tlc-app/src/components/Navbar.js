@@ -10,9 +10,9 @@ render() {
       <h1><a>NYC TLC APP</a></h1>
       <nav>
          <li><a>All DriverList</a></li>
-         <li><a>Home</a></li>
+         <li><a href="/">Home</a></li>
          <li><a>About</a></li>
-         <li><a>Login</a></li>
+         <li><a href="/login">Login</a></li>
 
       </nav>
 

@@ -37,9 +37,49 @@ input{
   font-size:15px;
   text-align:center;
 }
+.ui.massive.image{
+  opacity:0.7;
+}
 .hide{
   display: none;
 }
+
+.listofdriver{
+  padding: 30px;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    width: 360px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    height: 450px;
+    text-align: center;
+    box-shadow: 0 2px 7px 0 rgba(52,71,89,0.2);
+    cursor: pointer;
+
+
+
+}
+.listofdriver:hover{
+    transform: scale(1.02, 1.02);
+    cursor: pointer;
+    box-shadow: -2px 0px 10px rgba(181, 67, 31, 0.15);
+    transition: 0.3s;
+    background-color: rgba(39, 154, 199, 0.781);
+
+}
+.ui.segments:hover{
+    transform: scale(1.02, 1.02);
+    cursor: pointer;
+    box-shadow: -2px 0px 10px rgba(181, 67, 31, 0.15);
+    transition: 0.3s;
+    background-clip: border-box;
+}
+
+.ui.primary.button{
+  margin: 0 530px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -9,19 +9,19 @@ class Search extends Component {
         return (
         <div className="Box">
 
-             <form
+             <form 
              onSubmit={this.props.submitForm}
              >
 
-            <div className="ui icon input">
+            <div className="ui icon input" >
                 <input type="text" 
                 
                 value={this.props.inputValue}
-                placeholder="Search..."
+                placeholder="Search..." 
                 onChange={this.props.handleInputValue} 
 
                />
-               <i aria-hidden="true" class="search icon"></i>
+               <i aria-hidden="true" className="search icon" ></i>
             </div>
             </form>
           {/* <form 
