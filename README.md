@@ -1,3 +1,3 @@
 # NYC-TLC-APP
 ## Wireframe & planning:
-![alt text](https://git.generalassemb.ly/arifkhan36/Rock-Paper-Scissors-Game/blob/master/wireframe.JPG)
+![alt text](https://github.com/arifkhan36/NYC-TLC-APP/blob/master/wireframe%20(1).JPG)
